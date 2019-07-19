@@ -1,1 +1,99 @@
 // Follow the order in the readme
+@import "variables";
+@import "mixins";
+
+@import "reset";
+@import "global";
+
+@import "navigation";
+@import "footer";
+@import "home-page";
+
+.head {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+header nav a {
+    text-decoration: none;
+    color: Black;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.top-img {
+    display:flex;
+    justify-content: center;
+}
+
+
+.Top-content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.content-section {
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+}
+
+.btn{
+    .btn(teal, white);
+
+}
+
+@media (max-width: 500px) {
+   .again {
+       display: flex;
+}
+
+
+
+
+
+
+       .content-pick {
+        padding-top: 30px;
+        border-top: 2px dashed @navigation-border;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .btn  {
+        cursor: pointer;
+        background: @bg;
+        color:@color;
+        width: @width;
+        font-size: 1rem;
+        padding: 4%;
+        text-align: center;
+        margin: auto;
+        border-radius: 1rem;
+        }
+
+.content-destination {
+        padding-top: 30px;
+        border-top: 2px dashed @navigation-border;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+}
